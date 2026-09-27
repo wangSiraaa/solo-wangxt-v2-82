@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/api.ts","./src/main.tsx","./src/types.ts","./src/components/ChecksPanel.tsx","./src/components/VerdictBanner.tsx","./src/components/ViolationsList.tsx","./src/pages/DetailPage.tsx","./src/pages/HistoryPage.tsx","./src/pages/HomePage.tsx","./src/pages/PolicyPage.tsx","./src/pages/VerifyPage.tsx"],"version":"5.9.3"}

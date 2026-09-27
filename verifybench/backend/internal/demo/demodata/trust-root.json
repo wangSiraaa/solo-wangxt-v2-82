@@ -1,0 +1,17 @@
+{
+  "allowedBuildTypes": [
+    "https://example.com/buildtypes/go-reproducible/v1"
+  ],
+  "allowedSourceHosts": [
+    "github.com",
+    "gitlab.acme.example"
+  ],
+  "keys": [
+    {
+      "builderId": "https://builders.example.com/github-actions",
+      "keyId": "sha256:c51f6547205bac02f468763eb37047e774f41d9cd5617328ae6cabf0f43e26e8",
+      "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAjT5N3H4WR4Sw38w+42P8Xr4Q9DJiwdpEk+FQ8OLhylg=\n-----END PUBLIC KEY-----\n"
+    }
+  ],
+  "version": 1
+}

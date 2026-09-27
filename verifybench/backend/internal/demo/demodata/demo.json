@@ -1,0 +1,38 @@
+{
+  "scenarios": [
+    {
+      "artifactFile": "hello-release.txt",
+      "description": "受信构建者签名、摘要一致、来源与构建类型合规 —— 预期全部通过",
+      "expectedAllow": true,
+      "expectedChecks": [
+        "signatureValid",
+        "issuerTrusted",
+        "digestMatch",
+        "policyAllow"
+      ],
+      "id": "normal",
+      "title": "正常产物"
+    },
+    {
+      "artifactFile": "hello-release.txt",
+      "description": "签名仍然有效，但产物内容在签名后被修改 —— 预期摘要一致性失败",
+      "expectedAllow": false,
+      "expectedChecks": [
+        "digestMatch"
+      ],
+      "id": "tampered",
+      "title": "被篡改的产物"
+    },
+    {
+      "artifactFile": "hello-release-untrusted.txt",
+      "description": "证据自洽但签名密钥不在信任根中 —— 预期签发者信任失败",
+      "expectedAllow": false,
+      "expectedChecks": [
+        "signatureValid",
+        "issuerTrusted"
+      ],
+      "id": "untrusted",
+      "title": "不受信任的构建者"
+    }
+  ]
+}

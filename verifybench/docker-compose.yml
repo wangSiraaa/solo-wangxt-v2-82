@@ -1,0 +1,33 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: verifybench
+      POSTGRES_PASSWORD: verifybench
+      POSTGRES_DB: verifybench
+    ports:
+      - "5432:5432"
+    volumes:
+      - verifybench-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U verifybench"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  server:
+    build:
+      context: ./backend
+    environment:
+      ADDR: ":8080"
+      DATABASE_URL: "postgres://verifybench:verifybench@postgres:5432/verifybench?sslmode=disable"
+      TRUST_ROOT: "/app/trust-root.json"
+      FRONTEND_DIST: "/app/frontend-dist"
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  verifybench-pgdata:
