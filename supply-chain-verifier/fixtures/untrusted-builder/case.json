@@ -1,0 +1,5 @@
+{
+  "desc": "不受信任构建者:签名有效但签发者与构建流程均不受信",
+  "expect": "deny",
+  "name": "untrusted-builder"
+}

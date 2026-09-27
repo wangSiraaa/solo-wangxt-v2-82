@@ -1,0 +1,14 @@
+[
+  {
+    "keyid": "trusted-builder-01",
+    "owner": "release-team",
+    "algo": "ed25519",
+    "pub": "45cDOSY3X4/dGTQDyI7dWZCI0dEOJh/3f85478d0k/4="
+  },
+  {
+    "keyid": "intern-builder-07",
+    "owner": "intern (未授权)",
+    "algo": "ed25519",
+    "pub": "USeP0jkIgOxqUqtyjVYdyVn1I0utnE2IW5081MIZDoA="
+  }
+]

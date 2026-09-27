@@ -1,0 +1,11 @@
+{
+  "trusted_signers": {
+    "trusted-builder-01": { "owner": "release-team", "desc": "官方发布流水线签名密钥" }
+  },
+  "allowed_builders": [
+    "https://builders.example.com/github-actions-release"
+  ],
+  "allowed_predicate_types": [
+    "https://slsa.dev/provenance/v1"
+  ]
+}

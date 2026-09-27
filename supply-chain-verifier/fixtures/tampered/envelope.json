@@ -1,0 +1,10 @@
+{
+  "payload": "ewogICJfdHlwZSI6ICJodHRwczovL2luLXRvdG8uaW8vU3RhdGVtZW50L3YxIiwKICAicHJlZGljYXRlIjogewogICAgImJ1aWxkRGVmaW5pdGlvbiI6IHsKICAgICAgImJ1aWxkVHlwZSI6ICJodHRwczovL2V4YW1wbGUuY29tL2J1aWxkdHlwZXMvcmVsZWFzZS92MSIKICAgIH0sCiAgICAicnVuRGV0YWlscyI6IHsKICAgICAgImJ1aWxkZXIiOiB7CiAgICAgICAgImlkIjogImh0dHBzOi8vYnVpbGRlcnMuZXhhbXBsZS5jb20vZ2l0aHViLWFjdGlvbnMtcmVsZWFzZSIKICAgICAgfQogICAgfQogIH0sCiAgInByZWRpY2F0ZVR5cGUiOiAiaHR0cHM6Ly9zbHNhLmRldi9wcm92ZW5hbmNlL3YxIiwKICAic3ViamVjdCI6IFsKICAgIHsKICAgICAgImRpZ2VzdCI6IHsKICAgICAgICAic2hhMjU2IjogIjllMTE2ZTg1MTM4NzA1MGJiMTk3MmYxMDBkMTM4NWU1YTVjZTE1Yjg4MGNmMDEzYjgwZmE4NmVhYWU3ODBjOTgiCiAgICAgIH0sCiAgICAgICJuYW1lIjogImFwcC50YXIuZ3oiCiAgICB9CiAgXQp9",
+  "payloadType": "application/vnd.in-toto+json",
+  "signatures": [
+    {
+      "keyid": "trusted-builder-01",
+      "sig": "HHhmhWkrZ+5w7Fhn+qqaI03Y2MFFJn32mx9sG4jhigEmAM27EjVd775LEIjych9OBqDM+DmDHDyD1i7WXbg4AQ=="
+    }
+  ]
+}

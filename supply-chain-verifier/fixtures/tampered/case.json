@@ -1,0 +1,5 @@
+{
+  "desc": "被改过的文件:证据合法但本地产物摘要与声明不符",
+  "expect": "deny",
+  "name": "tampered"
+}
